@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Administrate';
+
+  adminAuthorisation : boolean = false;
+
+  logAdmin() {
+    this.adminAuthorisation = !this.adminAuthorisation;
+  }
 }
